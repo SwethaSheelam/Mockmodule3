@@ -25,10 +25,10 @@ app.get("/memory",(req,res)=>{
     })
 });
 mongoose
-.connect(process.env.)
+
 .then(()=>console.log("Mongo Connected"))
 .catch ((err)=>console.log("database connection error:",err))
 
 app.listen(process.env.PORT,()=>{
     console.log("SERVER started ${process.env.PORT}");
-})
+});
